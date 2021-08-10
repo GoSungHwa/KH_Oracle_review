@@ -1,0 +1,38 @@
+<select 문법?>
+select [distinct] (*,컬럼명1,컬럼명2, 계산식 별칭,함수 별칭)
+from 테이블명1 별칭 [INNER/LEFT/RIGHT/OUTER JOIN 테이블명2 별칭]
+ON/USING 조인조건
+where 조건문-그룹핑전레코드선별
+group by 컬럼명1[,컬럼명2...]
+having 조건문-그룹핑후최종레코드선별
+order by 컬럼명 정렬;
+
+-수행순서- 
+FROM -> ON/USING -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
+
+숫자 함수  - ABS : 절대값 출력
+                  -ROUND : 숫자 반올림 후 출력	
+	      -TRUNC : 숫자를 버림 후 출력
+	      -MOD : 나눈 후 나머지 값
+	      -CEIL : 주어진 숫자와 가장 근접한 큰 수 출력
+	      - FLOOR : 주어진 숫자와 가장 근접한 작은  정수 출력
+	      - POWER : 숫자 제곱 출력
+
+	
+	LAPD /RPAD : 기준 공간 칸수를 지정하고 빈칸만틈 특정문자로 채우는 함수
+	
+	LTRIM/RTRIM : 왼쪽 또는 오른쪽의 공백문자를 제거해주는 함수
+
+변환 함수 : 숫자, 문자, 날짜 데이터 타입을 서로의 데이터 타입으로 변환하는 함수
+	TO_CHAR : 날짜형&숫자형 -->문자형 변환
+	TO_DATE : 문자형 -->날짜형
+	TO_NUMBER : 문자-->숫자
+
+		숫자-->문자 변환 시 사용하는 형식 요소
+				-9 : 일반적인 숫자, 0 : 앞의 빈자리를 0으로 채움
+				-$ : $표시 ,L : 지역 통화 단위 표시(W)
+
+그룹 함수 : COUNT, AVG, SUM, MAX, MIN
+
+조인 : 둘 이상의 테이블을 연결하여 데이터를 검색하는 방법
+ 		-등가조인, 비등가 조인, 셀프 조인, INNER, OUTER, USING
