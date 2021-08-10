@@ -1,0 +1,31 @@
+데이터베이스 : 중복을 최소화하여 통합 저장된 데이터 집합체
+
+DBMS : 데이터베이스를 관리하는 소프트웨어
+
+관계형 데이터베이스 : 정보를 저장하기 위해 테이블 사용, 행과 열로 구성
+			DB를 만들거나 이용하기가 다른 DBMS에 비해 쉽고 확장이 용이
+
+릴레이션 : 테이블
+릴레이션 인스턴스 : 구체적인 데이터 값을 갖고 있는 행들
+릴레이션 스키마 : 속성 이름들의 집합
+튜플 : 릴레이션을 구성하는 각각의 행
+		튜플의 수 : 카디널리티, 기수, 대응수
+도메인 : 하나의 속성이 취할 수 있는 같은 타입의 원자값들의 집합
+
+SQL(Structured Query Language) : 데이터베이스에서 자료를 검색/수정/삭제하는     데이터베이스 언어
+
+조작어 - DML(Data Manipulation Language) 
+		INSERT, DELETE, UPDATE
+
+조회어 : DQL(Data Query Language)
+		SELECT
+
+정의어 : DDL(Data Definition Language)
+		CREATE, DROP, ALTER
+	-DDL에 대해 트랜잭션을 지원하지 않으므로 롤백 할 수 없고 커밋할 필요가 없다.
+
+제어어 : DCL
+	COMMIT, ROLLBACK, GRANT, REVOKE
+
+트랜잭션 처리어 : TCL
+	DCL에서 트랜잭션을 제어하는 명령어 커밋과 롤백에 대한 표현
