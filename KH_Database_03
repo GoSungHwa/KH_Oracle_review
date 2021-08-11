@@ -1,0 +1,22 @@
+Sub Query : 하나의 SQL 문장 내에 포함된 또 다른 SQL문이 있는 쿼리문
+		서브 쿼리는 반드시 ()안에 표현
+	
+	 ANY, SOME : 인 쿼리의 비교 조건이 서브 쿼리의 여러 검색 결과 중 하나 이상 만족되면 반환
+	ALL : 메인 쿼리의 비교 조건이 서브 쿼리의 여러 검색 결과와 모든 값이 일치하면 반환
+	 EXISTS :  서브쿼리의 데이터가 존재하는 지 여부를 먼저 따져 존재하는 값들만 결과로 출력
+
+	From절 서브 쿼리 
+
+집합연산자
+	UNION : 합집합, INTERSECT(교집합), MINUS(차집합)
+
+DDL : 정의어
+
+CREATE TABLE
+
+ALTER 
+--ADD(추가),RENAME(이름변경),MODIFY(수정),DROP(삭제)
+--ALTER TALBLE dept ADD 추가컬럼명 자료형 제약조건
+--ALTER TABLE dept MODIFY COLUMN기존컬럼명 번경자료형 변경제약조건
+--ALTER TABLE dept DROP COLUMN 기존컬럼명
+--ALTER TABLE dept RENAME 기존컬럼명 
